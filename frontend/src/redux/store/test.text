@@ -1,0 +1,16 @@
+const initialState = {
+  user: {},
+  token: "",
+};
+
+const postReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "LOGIN":
+      return state.concat([action.payload]);
+    case "GETUSER":
+      break;
+    default:
+      break;
+  }
+};
+export default postReducer;
